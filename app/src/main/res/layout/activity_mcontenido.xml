@@ -16,7 +16,7 @@
             android:layout_height="220dp"
             android:layout_gravity="center"
             android:clickable="true"
-            app:srcCompat="@drawable/ic_item1"
+            app:srcCompat="@drawable/ic_clase1"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="84dp" />
 
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:gravity="center"
-            android:text="Catedra:Base Legal"
+            android:text="Catedra 1:Base Técnica"
             android:textColor="@color/colorSplash"
             android:textSize="15sp"
             tools:layout_editor_absoluteX="73dp"

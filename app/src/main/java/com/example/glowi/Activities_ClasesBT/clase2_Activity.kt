@@ -1,6 +1,5 @@
-package com.example.glowi
+package com.example.glowi.Activities_ClasesBT
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,19 +10,17 @@ import android.webkit.WebViewClient
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.glowi.R
 
-class Catedra1_Activity : AppCompatActivity() {
-     val videoId = "BeK7XZMm-4Q"
-    @SuppressLint("MissingInflatedId")
+class clase2_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_catedra1)
+        setContentView(R.layout.activity_clase2)
         //Recyclerview para enlistar el contenido
         val recyclerView: RecyclerView = findViewById(R.id.indexRecyclerView)
         val indexList = listOf("- La historia del seguro", "- Los Imprevistos","- El Seguro es una Aventura" )
 
-        val adapter = IndexAdapter(indexList)
+        val adapter = com.example.glowi.IndexAdapter(indexList)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -33,7 +30,7 @@ class Catedra1_Activity : AppCompatActivity() {
         webView.webViewClient = WebViewClient()
 
 
-        val videoUrl = "https://www.youtube.com/embed/$videoId"
+        val videoUrl = "https://www.youtube.com/watch?v=PEJTRKQFbCw"
         webView.loadUrl(videoUrl)
     }
 }

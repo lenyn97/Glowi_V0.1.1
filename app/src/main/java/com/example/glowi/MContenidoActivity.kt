@@ -11,7 +11,7 @@ class MContenidoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_mcontenido)
         val imageView: ImageView = findViewById(R.id.imageViewc1)
         imageView.setOnClickListener {
-            val intent = Intent(this, Catedra1_Activity::class.java)
+            val intent = Intent(this, Menu_Activity::class.java)
             startActivity(intent)
         }
     }
